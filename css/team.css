@@ -1,0 +1,345 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70px;
+  flex-shrink: 2;
+  border-bottom: 1px solid #DCDCDC;
+}
+.header > .headLeft{
+  display: flex;
+  flex-basis: 400px;
+  flex-shrink: 2;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header > .headLeft > .mainLogoImg{
+  margin-left: 20px;
+}
+.header > .headLeft > .mainLogoImg > img{
+  width:100px;
+  height: auto;
+}
+.header > .headLeft > .teamName{
+  margin-left: 20px;
+  font-size: 17pt;
+  color: #646464;
+}
+.headMid{
+  flex:1
+}
+.headRight{
+  display: flex;
+  flex-basis: 400px;
+  flex-shrink: 2;
+  justify-content: center;
+  align-items: center;
+  color:#646464
+}
+.navBtn{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width:100px;
+  border-radius: 20px;
+  margin: 0px 10px;
+}
+.navBtn > img{
+  padding-left: 10px;
+}
+.btnText{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  color: #646464;
+}
+.xpBtn{
+  border: 1px solid #4DB6AC;
+}
+.scrumBtn{
+  border: 1px solid #7D8ACD;
+}
+.chatBtn{
+  border: 1px solid #FFA726;
+}
+.dashBtn{
+  border: 1px solid #BF73CC;
+}
+.content{
+  display: flex;
+  height: 700px;
+  flex-direction: row;
+}
+.leftSide{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  flex-shrink: 2;
+  justify-content: space-around;
+  border-right: 1px solid #DCDCDC;
+}
+.leftSide > .profile{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftSide > .profile > .profileImg{
+  border-radius: 100%;
+  width:175px;
+  height: 175px;
+  margin-bottom: 30px;
+}
+.leftSide > .profile > .profileImg > img{
+  border-radius: 100%;
+  width:175px;
+  height: 175px;
+}
+.leftSide > .profile > .profileName{
+  font-size: 20pt;
+  color:#646464;
+}
+.leftSide > .profile > .profileEmail{
+  font-size: 15pt;
+  color:#BDBDBD;
+}
+.leftSide > .outBtn{
+  display: flex;
+  flex-shrink: 2;
+  flex-basis: 300px;
+  align-items:flex-end;;
+  justify-content: center;
+}
+.leftSide > .outBtn > .outBtnBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width:55px;
+  border-radius: 100%;
+  border: 2px solid #DCDCDC;
+}
+.leftSide > .outBtn > .outBtnBox > img{
+  height: 25px;
+  width:25px;
+  margin-left: 7px;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  padding: 20px;
+  min-width: 200px;
+}
+.timeLine{
+  border: 1px solid #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.timeLine > .timeLineProfile{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 2;
+  flex-basis: 60px;
+  padding: 5px;
+}
+.timeLine > .timeLineProfile > .timeLineProfileImg{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  align-items: center;
+}
+.timeLine > .timeLineProfile > .timeLineProfileImg > img{
+  width:45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.timeLine > .timeLineProfile > .timeLineProfileIndex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Note .timeLineProfileIndex > .timeLineProfileName{
+  font-size: 12pt;
+  color: #646464;
+}
+.Note .timeLineProfileIndex > .timeLineProfileDate{
+  font-size: 9pt;
+  color: #BDBDBD;
+}
+.conference .timeLineProfileIndex > .timeLineProfileDate{
+  font-size: 9pt;
+  color: #D8D8D8;
+}
+.Note > .timeLineIndex{
+  padding: 20px;
+  padding-top: 10px;
+  color: #646464
+}
+.conference{
+  background-color: #52C4F7;
+  color:white;
+}
+.timeLineContent{
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+.timeLineContent > .contentName{
+  font-size: 18pt;
+  margin: 10px;
+  margin-bottom: 3px;
+}
+.timeLineContent > .contentDate{
+  font-size: 9pt;
+  color: rgba(250, 250, 250, 0.7);
+}
+.timeLineContent > .contentBtn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.rightSide{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  flex-basis: 350px;
+  border-left: 1px solid #DCDCDC;
+}
+.topText{
+  padding-bottom: 10px;
+  color: #496BB7;
+  font-size: 12pt;
+  font-weight: 500;
+}
+.notice > .topText{
+  margin: 10px;
+  margin-top: 15px;
+}
+.calender > .topText{
+ margin: 0px 10px;
+}
+.notice{
+  flex-shrink: 2;
+  flex-basis: 250px;
+}
+.noticeBox{
+  margin: 10px;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 10px 0px;
+}
+.noticeBox > .noiceIndex{
+  font-size: 12pt;
+  color:#646464;
+}
+.noticeBox > .noiceDate{
+  margin:2px 0px;
+  font-size: 9pt;
+  color:#BDBDBD;
+}
+.calender{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  flex-basis: 450px;
+}
+.dateView{
+  background-color: #496BB7;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px 0px;
+}
+.dateView > .backMonth{
+  display: flex;
+  align-items: center;
+  flex-shrink: 2;
+  flex-basis: 10px;
+  padding-left: 10px;
+}
+.dateView > .frontMonth{
+  display: flex;
+  align-items: center;
+  flex-shrink: 2;
+  flex-basis: 10px;
+  padding-right: 10px;
+}
+.dateView  img{
+  width:6px;
+  height: auto;
+}
+.dateView > .viewMonth{
+  flex:1;
+  text-align: center;
+  color:white;
+  padding: 2px 0px;
+}
+
+.dateIndex{
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid blue;*/
+}
+.dateIndex td, tr{
+  padding: 8px;
+  text-align: center;
+}
+.dateIndex div{
+  font-size: 10pt;
+  border-radius: 100%;
+  border: 1px solid #DCDCDC;
+  padding: 5px;
+  color: #646464;
+}
+.fastDateAddBox{
+  flex-shrink: 2;
+  flex-basis: 45px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #DCDCDC;
+  margin: 10px 10px;
+  padding: 5px;
+}
+.dateAddText{
+  display: flex;
+  flex-shrink: 2;
+  flex-basis: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dateAddText > .addIn{
+  font-size: 11pt;
+  color:#646464;
+}
+.dateAddText > .addInSub{
+  font-size: 8pt;
+  color: #BDBDBD;
+}
+.addDateIcBox{
+  flex:1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addDateIcBox > .addBtn{
+  border: 1px solid #DCDCDC;
+  border-radius: 100%;
+  width:25px;
+  height: 25px;
+  padding: 3px;
+  margin: 5px;
+}
