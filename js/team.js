@@ -23,9 +23,6 @@ $(function(){
         cursor:"pointer" //cursor pointer로 변경
 	});
     
-    $(".monthBtn").click(function addMonth(){
-        
-    });
-    
+    $
     
 });
