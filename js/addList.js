@@ -1,4 +1,5 @@
 var addTimeLine;
+var cal;
 function addTL(date){
         addTimeLine = "<div class=\"timeLine conference\">";
         addTimeLine +="<div class=\"timeLineProfile\">";
@@ -30,4 +31,29 @@ function addTL(date){
         addTimeLine +="</div>";
         addTimeLine +="</div>";
         addTimeLine +="</div>";
+}
+
+function resetCal(){
+        var a = 2;
+        cal = "<tr>"
+        cal +="<td></td><td></td><td></td><td></td><td></td><td></td>";
+        cal += "<td class=\"date\"><div>1</div></td></tr>";
+        for(var i = 1; i <=4; i ++){
+            cal += "<tr>";
+            for(var k = 1; k<=7; k++){
+                
+                cal += "<td class=\"date\"><div>";
+                cal += a
+                cal += "</div></td>";
+                
+                a++;
+            }
+            cal += "</tr>";
+        }
+    
+        cal += "<tr>";
+        cal += "<td class=\"date\"><div>29</div></td>";
+        cal += "<td class=\"date\"><div>30</div></td>";
+        cal += "<td class=\"date\"><div>31</div></td></tr>";
+
 }

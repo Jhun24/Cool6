@@ -1,5 +1,9 @@
 $(function(){
+    var d = new Date();
+    var month = d.getMonth()+1;
+    var year = d.getFullYear();
     
+    console.log(month);
     
     $(".date").droppable({
 		
@@ -7,10 +11,10 @@ $(function(){
 	    accept: ".addBtn", //addBtn라는 class를 가진것만 인식 
 
 		drop:function(event, ui){
-			$(this).append($(ui.draggable.clone()));
             console.log($(this).text());
-            addTL($(this).text());
-            $(".article").append(addTimeLine);
+			addTL($(this).text());
+            $(this).html($(ui.draggable.clone()));
+            $(".article").append(addTimeLine);  
 		}
 	});
     
@@ -23,6 +27,54 @@ $(function(){
         cursor:"pointer" //cursor pointer로 변경
 	});
     
-    $
+    $(".backMonth").click(function mDate(){
+        month = month - 1;
+        if(month == 0){
+           month = 12;
+           year = year - 1;
+       }
+        $(".viewMonth").html(year+"."+month);
+        resetCal();
+        $(".dateIndex").html(cal);
+    
+        $(".date").droppable({
+		
+            tolerance: "intersect", //50% 이상 겹치면 Drop 되게 한다 
+            accept: ".addBtn", //addBtn라는 class를 가진것만 인식 
+
+            drop:function(event, ui){
+                console.log($(this).text());
+                addTL($(this).text());
+                $(this).html($(ui.draggable.clone()));
+                $(".article").append(addTimeLine);  
+            }
+        });
+        
+    });
+    
+    $(".frontMonth").click(function pDate(){
+        month = month + 1;
+        if(month == 13){
+           month = 1;
+           year = year + 1;
+       }
+        $(".viewMonth").html(year+"."+month); 
+        resetCal();
+        $(".dateIndex").html(cal);
+        
+        $(".date").droppable({
+		
+            tolerance: "intersect", //50% 이상 겹치면 Drop 되게 한다 
+            accept: ".addBtn", //addBtn라는 class를 가진것만 인식 
+
+            drop:function(event, ui){
+                console.log($(this).text());
+                addTL($(this).text());
+                $(this).html($(ui.draggable.clone()));
+                $(".article").append(addTimeLine);  
+            }
+        });
+    
+    });
     
 });
