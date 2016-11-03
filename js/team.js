@@ -1,6 +1,6 @@
 $(function(){
     var d = new Date();
-    var month = d.getMonth()+1;
+    var month = d.getMonth();
     var year = d.getFullYear();
     
     console.log(month);
@@ -76,5 +76,7 @@ $(function(){
         });
     
     });
+    
+    
     
 });
