@@ -24,8 +24,9 @@ $(function(){
 	    accept: ".addBtn", //addBtn라는 class를 가진것만 인식 
 
 		drop:function(event, ui){
-            console.log($(this).text());
-			addTL($(this).text());
+        
+            addTL($(this).text());
+            console.log($(this).html);
             $(this).html($(ui.draggable.clone()));
             $(".article").append(addTimeLine);  
 		}
@@ -76,6 +77,7 @@ $(function(){
         check = 2;
         $(".viewMonth").html(year+"."+month); 
         resetCal(date,check);
+        $(".dataIndex").html("");
         $(".dateIndex").html(cal);
         
         $(".date").droppable({

@@ -6,7 +6,7 @@ var month = 11;
 var year = 2016;
 var e;
 
-
+var i = 1;
 
 function addTL(date){
         addTimeLine = "<div class=\"timeLine conference"+i+"\">";
