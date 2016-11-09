@@ -8,7 +8,8 @@ $(function(){
            revert:"invalid",
             appendTo:"body",
             cursor:"pointer",
-            helper: 'clone',  
+            helper: 'clone',
+            
         });
     });
     
@@ -19,7 +20,7 @@ $(function(){
         helper: 'clone',  
     });
     
-    $(".Doing").droppable({
+    $(".doneBox").droppable({
 		
 		tolerance: "intersect", 
 	    accept: ".cardView",
@@ -32,7 +33,7 @@ $(function(){
 		}
 	}); 
     
-    $(".Done").droppable({
+    $(".doingBox").droppable({
 		
 		tolerance: "intersect", 
 	    accept: ".cardView",

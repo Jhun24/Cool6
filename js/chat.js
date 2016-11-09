@@ -1,4 +1,4 @@
-var socket = io();
+    var socket = io();
 $(window).load(()=>{
 
   socket.emit('change room', 'main')
